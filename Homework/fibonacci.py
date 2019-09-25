@@ -1,3 +1,4 @@
+#Almada Putra A.
 #%%
 #the calculator
 FirstNum = input("enter your first number: ")
