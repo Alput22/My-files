@@ -50,6 +50,7 @@ count=Counter(word)
 for i in word:
     print(i,count[i])
 #%%
+#anagram finding
 str1 = input("enter first word: ")
 str2 = input("enter second word: ")
   
@@ -82,7 +83,17 @@ class rom_conversion:
         return arabic_val
     
 print(rom_conversion().roman_to_arabic("X"))
-
+#%%
+#converting arabic to roman
+conv = [[10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'],[1, 'I']]
+num = 17
+roman = ''
+i = 0 
+while num > 0:
+    while conv[i][0] > num: i+=1
+    roman += conv[i][1] 
+    num -= conv[i][0] 
+print(roman)
 
     
     
