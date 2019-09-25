@@ -44,6 +44,26 @@ def fibonacci(number):
     else:
         return number
 #%%
+#palindrome
+import string
+def ignore_punctuation(word):
+    return "". join(letter.lower() for letter in word if letter in string.ascii_letters)
+def reverse(word):
+    return word[::-1]
+def is_palindrome(word):
+    word = ignore_punctuation(word)
+    rev = reverse(word)
+    if (word == rev):
+        return True
+    else:
+        return False
+word = str(input("eneter a word: "))
+result = is_palindrome(word)
+if result:
+    print("yes, its a palindrome.")
+else:
+    print("no, its not a palindrome.")
+#%%
 #the letter counting/ASCII number
 word = input("enter word here : ")
 from collections import Counter
