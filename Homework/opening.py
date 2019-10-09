@@ -1,4 +1,5 @@
 #%%
+#Almada Putra
 import json
 
 with open(r'C:\Users\hp\Desktop\Mada\Homework\tweety.json') as f:
