@@ -21,4 +21,4 @@ plt.yticks(indentation, strdict.keys())
 plt.show()
 
 print(strdict)
-#I don't know how to sort it because when sorted the words and values don' match in the bar
+#I don't know how to sort it because when sorted the words and values don't match in the bar
