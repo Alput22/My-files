@@ -66,10 +66,8 @@ class Bank:
             self._customers.append(firstname + lastname)
             self._number_of_customers += 1
     
-    def getcustomer(self,i,int):
-        i = input("Please enter your name: ")
-        for i in self._customers:
-            print("hello", i)
+    def getcustomer(self):
+        return self._customers
             
     
 myAccount = Account(5000)
