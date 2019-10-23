@@ -63,7 +63,17 @@ class Number:
             elif (Pos == 'Manager'and Salary > 10000000):
                 break
         
-Display.display()   
-Display.choice()
+    def deletestaff():
+        Deletion = input('Enter your ID: ')
+       # for i in filename:
+        #    if (Deletion in filename):
+         #       del(i)
     
+    def viewdata():
+        
+    def savexit():
+        with open(filename) as f:
+        
+Display.display()   
+Display.choice()    
         
