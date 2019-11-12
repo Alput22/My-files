@@ -42,12 +42,12 @@ class SnakeGame:
  
         self.window.fill(pygame.Color(225,225,225))
         for x in range(0, 510, 10):     #Used to draw the walls and their colors
-            pygame.draw.rect(self.window, (0,0,225), [x, 0, 10, 10])
-            pygame.draw.rect(self.window, (0,0,225), [x, 510, 10, 10])
+            pygame.draw.rect(self.window, (0,0,0), [x, 0, 10, 10])
+            pygame.draw.rect(self.window, (0,0,0), [x, 510, 10, 10])
  
         for x in range(0, 510, 10):
-            pygame.draw.rect(self.window, (0,0,225), [0, x, 10, 10])
-            pygame.draw.rect(self.window, (0,0,225), [510, x, 10, 10])
+            pygame.draw.rect(self.window, (0,0,0), [0, x, 10, 10])
+            pygame.draw.rect(self.window, (0,0,0), [510, x, 10, 10])
  
         for pos in self.snake.getBody():    #Draws the snake and food along with their colors
             pygame.draw.rect(self.window,pygame.Color(0,125,0),pygame.Rect(pos[0],pos[1],10,10))
