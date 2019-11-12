@@ -22,7 +22,7 @@ class SnakeGame:
                     self.gameover()
          
                 self.pressed = pygame.key.get_pressed()
-
+                #When the movement key is pressed then the snake will change direction
                 if self.pressed[pygame.K_RIGHT]:
                     self.snake.changeDirTo('RIGHT')
                 elif self.pressed[pygame.K_LEFT]:
