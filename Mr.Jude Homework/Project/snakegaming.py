@@ -63,7 +63,7 @@ class SnakeGame:
         self._checkEvents()
 
     def gameover(self): #When it's game over it will display a text and quit the game
-        self.font = pygame.font.SysFont('Candara', 30)
+        self.font = pygame.font.SysFont('Times New Roman', 30)
         self.score_text = self.font.render("Congrats you got " + str(self.score) + " points!",4,(255,0,0))
         self.window.blit(self.score_text,(100,250))
         pygame.display.flip()
