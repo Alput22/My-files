@@ -8,7 +8,7 @@ from Snakefood import Food
 class SnakeGame:
     def __init__(self):
         pygame.init()
-        self.window = pygame.display.set_mode((500 + 20,500 + 20))
+        self.window = pygame.display.set_mode((520,520))
         pygame.display.set_caption("Snake Game")
         self.fps = pygame.time.Clock()
         self.score = 0 
